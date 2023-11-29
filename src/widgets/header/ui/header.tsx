@@ -1,14 +1,14 @@
-import { Button } from "../../../shared/ui";
+import { Button } from "@/shared/ui";
 import "./header.css";
+import { useTelegram } from "@/shared/hooks";
 export const Header = () => {
-  const tg = Telegram.WebApp;
-  const onClose = () => {
-    tg.close();
-  };
+  const { onClose, user } = useTelegram();
   return (
     <header className={"header"}>
-      <Button onClick={onClose}>Закрыть</Button>
-      <span className={"username"}>{tg.initDataUnsafe.user?.usernames}</span>
+      <span className={"username"}>{user?.usernames}</span>
+      <Button className="header__button" onClick={onClose}>
+        Закрыть
+      </Button>
     </header>
   );
 };
