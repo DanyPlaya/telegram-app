@@ -6,7 +6,7 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 export const Button = (props: ButtonProps) => {
   const { children, ...buttonProps } = props;
   return (
-    <button className={`button` + buttonProps.className} {...buttonProps}>
+    <button className={`button ${buttonProps.className}`} {...buttonProps}>
       {children}
     </button>
   );
