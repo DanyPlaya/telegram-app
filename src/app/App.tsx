@@ -5,12 +5,6 @@ export const App = () => {
   useEffect(() => {
     tg.ready();
   }, []);
-  const onClose = () => {
-    tg.close();
-  };
-  return (
-    <div>
-      <button onClick={onClose}>Закрыть</button>
-    </div>
-  );
+
+  return <div></div>;
 };
