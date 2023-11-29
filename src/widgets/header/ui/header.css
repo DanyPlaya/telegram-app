@@ -8,10 +8,8 @@
     justify-content: space-between;
 }
 .username{
-    margin-left: auto;
-    width: 15px;
-    height: 15px;
-    color:black
+    
+    
 }
 .header__button{
     border: 1px solid;
