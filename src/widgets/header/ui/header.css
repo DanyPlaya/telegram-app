@@ -4,7 +4,16 @@
     display: flex;
     align-items: center;
     padding:0 20px;
+    border: 1px solid thistle;
+    justify-content: space-between;
 }
 .username{
     margin-left: auto;
+    width: 15px;
+    height: 15px;
+    color:black
+}
+.header__button{
+    border: 1px solid;
+    border-radius: 1rem;
 }
