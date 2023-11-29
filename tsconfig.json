@@ -24,7 +24,13 @@
     "typeRoots": [
       "./node_modules/@types",
       "./node_modules/telegram-webapps-types"
-    ]
+    ],
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": [
+        "*"
+      ]
+    }
   },
   "include": [
     "src",
